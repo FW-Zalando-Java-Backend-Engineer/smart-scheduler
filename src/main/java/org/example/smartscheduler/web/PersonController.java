@@ -20,4 +20,53 @@ public class PersonController {
 
     }
 
+    @PostMapping
+    public Person createPerson(@RequestBody Person person){
+        return repo.save(person);
+    }
+
+    /**
+     *
+     * examples:
+     * Request:
+     * GET http://localhost:8080/people/1
+     * Response:
+     * {
+     *     "id":1,
+     *     "name":"John"
+     * }
+     *
+     * Request:
+     * POST http://localhost:8080/people
+     * Content-Type: application/json
+     *
+     * RequestBody:
+     * {
+     *     "name":"Alice"
+     * }
+     *
+     * Response:
+     * {
+     *      "id":3,
+     *     "name":"Alice"
+     * }
+     *
+     * JSON
+     * [
+     * {
+     *     "key":"value"
+     *
+     * },
+     * {
+     *     "key":"value"
+     *
+     *       },
+     * {
+     *       "key":"value"
+     *
+     *      },
+     * ]
+     *
+     * */
+
 }
