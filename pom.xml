@@ -37,9 +37,17 @@
     </dependency>
 
     <!-- In-memory database (easy to use, no setup) -->
+<!--    <dependency>-->
+<!--      <groupId>com.h2database</groupId>-->
+<!--      <artifactId>h2</artifactId>-->
+<!--      <scope>runtime</scope>-->
+<!--    </dependency>-->
+
+
+    <!-- PostgreSQL JDBC Driver -->
     <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
     </dependency>
 
