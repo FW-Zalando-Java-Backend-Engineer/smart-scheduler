@@ -29,7 +29,7 @@ public class PersonController {
      *
      * examples:
      * Request:
-     * GET http://localhost:8080/people/1
+     * GET http://localhost:9090/people/1
      * Response:
      * {
      *     "id":1,
